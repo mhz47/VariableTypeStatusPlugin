@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>com.example.variabletypestatus</id>
+    <name>Variable Type Inspector</name>
+    <vendor>mhz47</vendor>
+    <version>1.0</version>
+    <description>
+        plugin for PyCharm that displays the type of a variable under the caret in the status bar.
+    </description>
+    <depends>PythonCore</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory
+                id="VariableTypeStatus"
+                implementation="com.example.variabletypestatus.VariableTypeStatusWidgetFactory"
+        />
+    </extensions>
+    <idea-version since-build="243" until-build="999.*"/>
+</idea-plugin>
